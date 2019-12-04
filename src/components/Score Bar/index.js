@@ -2,24 +2,26 @@ import React from "react";
 import './index.css'
 
 const ScoreBar = props => {
+    const { blackBar, grayBar, lightGrayBar } = props
+
     return (
         <div className="scoreMain">
             <div className="score">
-                <label>Max Score: 100%</label>
-                <label>Min Score: 100%</label>
+                <label>Score: {Math.round(blackBar)}%</label>
+                <label>Max Score: {Math.round(lightGrayBar)}%</label>
             </div>
 
             <div className="scoreBar">
-                <div className="lightGray"></div>
-                <div className="gray"></div>
-                <div className="black"></div>
+                <div className="lightGray" style={{ width: `${lightGrayBar}%` }}></div>
+                <div className="gray" style={{ width: `${grayBar}%` }}></div>
+                <div className="black" style={{ width: `${blackBar}%` }}></div>
             </div>
 
         </div>
     );
 }
 
-export default ScoreBar;
+export default ScoreBar
 
 
 

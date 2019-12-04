@@ -3,6 +3,10 @@
     height: 90%;
     background-color: #FFFFFF;
 }
+button{
+    outline: none;
+
+}
 
 .quizBody{
     height: 98%;
@@ -38,7 +42,7 @@
     flex-direction: column;
 }
 
-.optionButton{
+.optionButton {
     flex: 1;
     display: flex;
     flex-wrap: wrap;
@@ -46,13 +50,56 @@
     align-items: center;
 }
     
-.optionButton button{
+.options{
     height: 30px;
     width: 200px;
     border: 1px solid;
     border-radius: 5px;
     font-weight: bold;
+    font-size: 0.7em;
+}
+
+.correctOption{
+    height: 30px;
+    width: 200px;
+    border: 1px solid;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 0.7em;
+    background-color: #FFFFFF ;
+    color:black
+}
+
+.selectedOption{
+    height: 30px;
+    width: 200px;
+    border: 1px solid;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 0.7em;
+    background-color: black ;
+    color:#FFFFFF
+}
+
+
+.showMessage{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.showMessage button{
+    width : 200px;
+    height: 35px;
+    border: 1px solid;
+    border-radius: 10px;
     font-size: 15px;
+}
+
+.showMessage p{
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .scoreArea{

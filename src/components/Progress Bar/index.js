@@ -2,7 +2,7 @@ import React from "react";
 import './index.css'
 
 const ProgressBar = props => {
-    const width = props.question || 1;
+    const width = props.question
     return (
         <div className="progressBar">
             <div style={{width:`${width}%`}}></div>
@@ -10,7 +10,7 @@ const ProgressBar = props => {
     );
 }
 
-export default ProgressBar;
+export default ProgressBar
 
 
 
