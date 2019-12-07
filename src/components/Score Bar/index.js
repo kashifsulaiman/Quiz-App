@@ -7,7 +7,7 @@ const ScoreBar = props => {
     return (
         <div className="scoreMain">
             <div className="score">
-                <label>Score: {Math.round(blackBar)}%</label>
+                <label>Score: {Math.round(grayBar)}%</label>
                 <label>Max Score: {Math.round(lightGrayBar)}%</label>
             </div>
 
@@ -22,6 +22,3 @@ const ScoreBar = props => {
 }
 
 export default ScoreBar
-
-
-
